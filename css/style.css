@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+.logo h1{
+	 font-family: 'Kaushan Script', cursive;
+	 font-size: 70px;
+}
+a:hover{
+text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: red;
+}
+
+.social-list a{
+	color: rgba(0, 0, 0, 0.65);
+}
+
+.banner{
+	background-image: url(../images/post.jpg);
+	height: 400px;
+	background-size: 300%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	color: #fff;
+	position: relative;
+	background-color: #484848;
+	background-blend-mode: multiply;
+}
+.banner h2{
+	font-size: 25px;
+	position: absolute;
+	bottom: 35px;
+	padding: 35px;
+}
+.banner span{
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.category{
+    position: relative;
+}
+.category::after{
+	
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid #ffffff;
+	transform: scale(0.9);
+	transition: all 0.4s;
+}
+.category:hover::after{
+
+	width: 100%;
+}
+.category::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 2px solid #ffffff;
+	transform: scale(0.9);
+	transition: all 0.4s;
+}
+.category:hover::before{ 
+	height: 100%;
+
+}
+
+.category h3{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 30px;
+	transition: all 0.3s ease-in-out;
+}
+.category:hover h3{
+    bottom: 30px;
+
+}
+.category p{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    left: 30px;
+    margin: 0;
+    opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.category:hover p{
+	opacity: 1;
+    bottom: 20px;
+}
+
+
+@media (max-width: 991px){
+	.banner h2 {
+    font-size: 20px;
+}
+}
+
+@media (max-width: 767px){
+	.logo-section{
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
+}
+
+@media (max-width: 575px){
+	.logo h1 { 
+    font-size: 40px;
+}
+	.banner h2 {
+    font-size: 30px;
+}
+}
+
